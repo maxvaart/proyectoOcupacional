@@ -1,0 +1,30 @@
+.fondo{
+    background-color: #4c7b24   ;
+}
+
+.card{
+    color: white;
+    margin: 0px 0px 150px 0px;
+}
+
+#estudiante{
+    margin-left: 15%;
+}
+p{
+    font-size: 18px;
+}
+
+#metaG{
+    bottom: -1600px;
+    margin-left: 14%;
+    scale: 0.9;
+}
+#festejo{
+    bottom: -1380px;
+    margin-left: 5%;
+    scale: 0.9;
+}
+
+.faltaAdquirir{
+    filter: grayscale(100%);
+}

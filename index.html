@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Ocupacional</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+        <div class="row fondo">
+           <img class="col-4 offset-1 shadow img-fluid"src="img/Calles.png" alt="calle">
+           <img class="position-absolute" src="img/metaG.png" alt="meta" id="metaG">
+           <img class="position-absolute d-none" src="img/festejo.png" alt="festejo" id="festejo">
+           <img class="fixed-top" id="estudiante" width="330px"src="img/estudiante0.png" alt="estudiante" style="margin-top: 6%;">
+           <div class="offset-1 col-5">
+               <div class="row ">
+                    <div class="col-12 shadow text-center sticky-top card bg-success p-3">
+                        <h1><strong>PROYECTO OCUPACIONAL</strong></h1>
+                    </div>
+                    <div id="carta3" class="col-12 shadow text-center align-items-center card bg-primary p-4">
+                        <h4><strong>Sobre mi</strong></h4>
+                        <p>Mi nombre es Maximiliano Lain. Tengo 25 años. Soy una persona muy flexible y multifacética, aprendo con facilidad y super rápido. Soy casi psicólogo, trabaje en rol de sociólogo y 
+                            soy un apasionado por la tecnología, la programación y los videojuegos. </p>
+                        <h5><em>Click en los iconos para tomar la experiencia / habilidades</em></h5>
+                        <div class="col-12" >
+                            <img class="m-3" id="icono1" width="80px" src="img/corazon.png" onclick=cambiarImagen(1)>
+                            <img class="m-3 d-none" id="icono2" width="80px" src="img/jostik.png" onclick=cambiarImagen(2)>
+                            <img class="m-3 d-none" id="icono3" width="80px" src="img/pc.png" onclick=cambiarImagen(3)>
+                        </div>
+                    </div>
+                    <div id="carta6" class="col-12 shadow text-center card bg-primary p-4">
+                        <h4><strong>Mis estudios</strong></h4>
+                        <p>Casi psicólogo, me faltan optativas, practicas y proyectos. Aprendí a tener una mentalidad mas problematizadora de la realidad, a tener una mirada más amplia.</p>
+                        <p>Me reencontré a través de cursos online con mi pasión, que es la programación y los videojuegos. Con el tiempo que disponía, hice y hago cursos de desarrollo. Así llegue a jóvenes a programar.  
+                            Me encantan hacer páginas web, así como también estoy creando un videojuego. </p>
+                        <h5><em>Click en los iconos para tomar la experiencia / habilidades</em></h5>
+                        <div class="col-12" >
+                            <img class="m-3 d-none" id="icono4" width="80px" src="img/psico.png" onclick=cambiarImagen(4)>
+                            <img class="m-3 d-none" id="icono5" width="80px" src="img/codigo.png" onclick=cambiarImagen(5)>
+                            <img class="m-3 d-none" id="icono6" width="80px" src="img/jap.png" onclick=cambiarImagen(6)>
+                        </div>
+                    </div>
+                    <div id="carta7" class="col-12 shadow text-center card bg-primary p-4">
+                        <h4><strong>Mi trabajo</strong></h4>
+                        <p>Comencé en Opción consultores como encuestador de calle y recorrí un largo camino pasando por supervisión, ayudante de recursos humanos hasta jefe de proyectos. Convivir el día a día con sociólogos 
+                            me hizo aprender muchísimo y a considerarme medio sociólogo. Aprendí a valorar y fomentar políticas de liderazgo y de trabajo en grupo que generen un ambiente disfrutable. </p>
+                        <h5><em>Click en los iconos para tomar la experiencia / habilidades</em></h5>
+                        <div class="col-12" >
+                            <img class="m-3 d-none" id="icono7" width="80px" src="img/trabajo.png" onclick=cambiarImagen(7)>
+                        </div>
+                    </div>
+                    <div class="col-12 shadow text-center card bg-primary p-4">
+                        <h4><strong>Metas / Objetivos</strong></h4>
+                        <h5><em>Corto / Mediano plazo:</em></h5><br>
+                        <p>- Finalizar jóvenes a programar<br>- Aprender React<br>- Diseñar un Curriculum Web<br>- Curso de diseño 2D/3D</p><br>
+                        <h5><em>Largo plazo:</em></h5><br>
+                        <p>- Tener trabajo en el rubro IT <br>- Finalizar y publicar mi videojuego<br>- Recibirme de Psicólogo  </p>
+                    </div>
+                    <div class="col-12 shadow text-center card bg-primary p-4">
+                        <h4><strong>Requisitos para los objetivos</strong></h4>
+                        <p>En color las habilidades adquiridas. En blanco y negro las que aun no están aprendidas.</p>
+                        <h5><em>Click en los iconos para tomar la experiencia / habilidades</em></h5>
+                        <div class="col-12" >
+                            <img class="m-3" width="70px" src="img/corazon.png">
+                            <img class="m-3 faltaAdquirir" width="70px" src="img/2d3d.png" id="noAdquirido1" onclick="adquirir(1)">
+                            <img class="m-3 faltaAdquirir" width="70px" src="img/reloj.png" id="noAdquirido5" onclick="adquirir(5)">
+                            <img class="m-3" width="70px" src="img/jostik.png">
+                            <img class="m-3 faltaAdquirir" width="70px" src="img/cv.png" id="noAdquirido2" onclick="adquirir(2)">
+                            <img class="m-3 faltaAdquirir" width="70px" src="img/csharp.png" id="noAdquirido3" onclick="adquirir(3)">
+                            <img class="m-3" width="70px" src="img/codigo.png">
+                            <img class="m-3 faltaAdquirir" width="70px" src="img/react.png" id="noAdquirido4" onclick="adquirir(4)">
+                            <img class="m-3 faltaAdquirir" width="70px" src="img/cupos.png" id="noAdquirido6" onclick="adquirir(6)">
+                            <img class="m-3" width="70px" src="img/psico.png">
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
